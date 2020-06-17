@@ -1,18 +1,20 @@
-#Interação com o usuario
-a = int(input('1° bimestre: '))
-if a > 10:
-    a = int(input('Você digitou errado ! Digite o valor novamente :'))
-b = int(input('2° bimestre: '))
-if a > 10:
-    a = int(input('Você digitou errado ! Digite o valor novamente :'))
-c = int(input('3° bimestre: '))
-if a > 10:
-    a = int(input('Você digitou errado ! Digite o valor novamente :'))
-d = int(input('4° bimestre: '))
-if a > 10:
-    a = int(input('Você digitou errado ! Digite o valor novamente :'))
+#Interação com o usuario media de notas de aluno.
+bimestre_1 = int(input('1° bimestre: '))
+while bimestre_1 > 10:
+    bimestre_1 = int(input('Nota invalida ! Retorne a nota original :'))
+bimestre_2 = int(input('2° bimestre: '))
+while  bimestre_2 > 10:
+    bimestre_2 = int(input('Nota invalida ! Retorne a nota original :'))
+bimestre_3 = int(input('3° bimestre: '))
+while  bimestre_3 > 10:
+    bimestre_3 = int(input('Nota invalida ! Retorne a nota original :'))
+bimestre_4 = int(input('4° bimestre: '))
+while  bimestre_4 > 10:
+    bimestre_4 = int(input('Nota invalida ! Retorne a nota original :'))
 #Calculo de média bimestral
-media = (a + b + c + d) / 4
+media = (bimestre_1 + bimestre_2 + bimestre_3 + bimestre_4) / 4
+#Impressão
+print()
 #Categorias de separação de medias dos alunos
 if media >= 9:
     print("Voce está de parabéns ! {}".format(media))
