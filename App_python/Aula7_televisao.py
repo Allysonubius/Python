@@ -16,21 +16,25 @@ class Televisao :
     def diminui_canal(self):
         if self.ligada:
             self.camal -= 2
-
-#TESTANDO BOTÂO LIGAR E DESLIGAR
-print()
-televisao = Televisao()
-print('Desligada {}'.format(televisao.ligada))
-televisao.power()
-print('Ligada {}'.format(televisao.ligada))
-televisao.power()
-print('Desligada {}'.format(televisao.ligada))
-televisao.power()
-print('Ligada {}'.format(televisao.ligada))
-#BOTAO DE MUDAR DE CANAIS
-print()
-print('Canal {}'.format(televisao.camal))
-televisao.aumenta_canal()
-print('Proximo Canal {}'.format(televisao.camal))
-televisao.diminui_canal()
-print('Canal Anterior {}'.format(televisao.camal))
+print('----------- x -----------')
+print(__name__)
+#MAIN
+if __name__ == '__main__':
+    #TESTANDO BOTÂO LIGAR E DESLIGAR
+    print('----------- x -----------')
+    televisao = Televisao()
+    print('Desligada {}'.format(televisao.ligada))
+    televisao.power()
+    print('Ligada {}'.format(televisao.ligada))
+    televisao.power()
+    print('Desligada {}'.format(televisao.ligada))
+    televisao.power()
+    print('Ligada {}'.format(televisao.ligada))
+    #BOTAO DE MUDAR DE CANAIS
+    print('----------- x -----------')
+    print('Canal {}'.format(televisao.camal))
+    televisao.aumenta_canal()
+    print('Proximo Canal {}'.format(televisao.camal))
+    televisao.diminui_canal()
+    print('Canal Anterior {}'.format(televisao.camal))
+print('----------- x -----------')

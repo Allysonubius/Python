@@ -17,11 +17,12 @@ class Calculadora :
     #DIV
     def divi (self):
         return self.valor_a / self.valor_b
-
-#INSTANCIANDO METODO CALCULADORA
-print()
-calculadora = Calculadora(10,2)
-print('SOMA: {}'.format(calculadora.soma()))
-print('SUBTRAÇÂO: {}'.format(calculadora.subt()))
-print('MULTIPLICAÇÂO: {}'.format(calculadora.mult()))
-print('DIVISÂO: {}'.format(calculadora.divi()))
+#MAIN
+if __name__ == '__main__':
+    #INSTANCIANDO METODO CALCULADORA
+    print()
+    calculadora = Calculadora(10,2)
+    print('SOMA: {}'.format(calculadora.soma()))
+    print('SUBTRAÇÂO: {}'.format(calculadora.subt()))
+    print('MULTIPLICAÇÂO: {}'.format(calculadora.mult()))
+    print('DIVISÂO: {}'.format(calculadora.divi()))
