@@ -16,3 +16,8 @@ print(type(lista))
 #Impressão ja convertido
 print('Impessão da lista com parenteses:')
 print(lista)
+print()
+#Conversão de lista para tupla sem repetição
+lista = ['cachorro', 'cachorro', 'gato', 'gato', 'elefante']
+conjunto_animais = set(lista)
+print('Lista: {}'.format(conjunto_animais))
